@@ -41,6 +41,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/section2.png": {
+		"ft": 32768,
+		"iS": 274953,
+		"oA": 0,
+		"oAP": "/deploy/img/section2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
