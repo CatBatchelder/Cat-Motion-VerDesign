@@ -1,0 +1,54 @@
+/* =============
+   Hero
+============= */
+
+#hero {
+   div {
+      @include md{
+         display: grid;
+         grid-template-columns: 55% 20% auto;
+         grid-template-areas: "hero hero text";
+      }
+      aside {
+         img {
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+         }
+         @include md{
+            grid-area: hero;
+         }
+      }
+
+      section {
+         @include md{
+            grid-area: text;
+            grid-column: span 2/-1;
+            z-index: 2;
+            margin-top: 150px;
+         }
+         
+          font-family: 'Comfortaa', cursive;
+         h3 {
+            text-align: center;
+            font-size: rem-calc(30);
+
+            @include md{
+               font-size: rem-calc(40);
+               text-align: right;
+            }
+         }
+
+         h1 {
+            text-align: center;
+            font-size: rem-calc(50);
+            color: $red;
+
+            @include md{
+               font-size: rem-calc(60);
+               text-align: right;
+            }
+         }
+      }
+   }
+}

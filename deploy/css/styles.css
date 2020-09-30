@@ -352,32 +352,54 @@ template {
 /* =============
     Base
 ============= */
-figure {
-  margin: 0;
-  padding: 0;
-}
-
 ul {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 ul li {
   list-style: none;
 }
 
-.container-grid {
+.spacing-for-header {
+  margin-top: 80px;
+}
+
+.content-spacing {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .content-spacing {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .content-spacing {
+    margin-bottom: 70px;
+  }
+}
+
+.grid-container {
   display: grid;
-  grid-template-areas: ". grid-content .";
+  grid-template-areas: ". container .";
   grid-template-columns: 15px auto 15px;
-  height: 100vh;
+}
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 25px auto 25px;
+  }
+}
+@media (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: 45px auto 45px;
+  }
 }
 @media (min-width: 1200px) {
-  .container-grid {
+  .grid-container {
     grid-template-columns: auto 1200px auto;
   }
 }
-.container-grid > div {
-  grid-area: grid-content;
+.grid-container > div {
+  grid-area: container;
 }
 
 /* =============
@@ -508,3 +530,52 @@ header > div #nav-container {
 /* =============
    Hero
 ============= */
+@media (min-width: 768px) {
+  #hero div {
+    display: grid;
+    grid-template-columns: 55% 20% auto;
+    grid-template-areas: "hero hero text";
+  }
+}
+#hero div aside img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  #hero div aside {
+    grid-area: hero;
+  }
+}
+#hero div section {
+  font-family: "Comfortaa", cursive;
+}
+@media (min-width: 768px) {
+  #hero div section {
+    grid-area: text;
+    grid-column: span 2/-1;
+    z-index: 2;
+    margin-top: 150px;
+  }
+}
+#hero div section h3 {
+  text-align: center;
+  font-size: 1.875rem;
+}
+@media (min-width: 768px) {
+  #hero div section h3 {
+    font-size: 2.5rem;
+    text-align: right;
+  }
+}
+#hero div section h1 {
+  text-align: center;
+  font-size: 3.125rem;
+  color: #872C2C;
+}
+@media (min-width: 768px) {
+  #hero div section h1 {
+    font-size: 3.75rem;
+    text-align: right;
+  }
+}

@@ -19,6 +19,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/hero.png": {
+		"ft": 32768,
+		"iS": 532072,
+		"oA": 0,
+		"oAP": "/deploy/img/hero.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/logo.png": {
 		"ft": 32768,
 		"iS": 8557,
@@ -49,12 +60,44 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/content/content.kit": {
+	"/dev/content/section-1.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/content.html",
+		"oAP": "/dev/content/section-1.html",
+		"oF": 0
+		},
+	"/dev/content/section-2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/section-2.html",
+		"oF": 0
+		},
+	"/dev/content/section-3.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/section-3.html",
+		"oF": 0
+		},
+	"/dev/content/section-4.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/section-4.html",
+		"oF": 0
+		},
+	"/dev/content/section-5.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/section-5.html",
 		"oF": 0
 		},
 	"/dev/global/footer.kit": {
@@ -249,7 +292,7 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/scss/sections/_content.scss": {
+	"/dev/scss/sections/_section-1.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -257,7 +300,59 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/_content.css",
+		"oAP": "/dev/scss/sections/_section-1.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_section-2.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-2.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_section-3.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-3.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_section-4.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-4.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_section-5.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-5.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
