@@ -1,3 +1,75 @@
 /* =============
     Header
 ============= */
+
+header {
+  //  background-color: $pastel-blue;
+    font-family: 'Comfortaa', cursive;
+    font-size: rem-calc(18);
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 600;
+
+    >div {
+
+        display: grid;
+        grid-template-areas: "logo burger"
+            "navi navi";
+        grid-template-columns: 80% auto;
+
+        @include lg {
+            grid-template-areas: "logo navi";
+            grid-template-columns: 20% auto;
+            height: auto;
+        }
+
+        #logo-container {
+            grid-area: logo;
+            height: 45px;
+            padding: 20px;
+
+            @include lg {
+                height: auto;
+            }
+
+            img {
+                height: 40px;
+
+                // @include lg {
+                //     height: auto;
+                // }
+            }
+        }
+
+        #burger-container {
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            justify-content: flex-end;
+            padding: 20px;
+
+            @include lg {
+                display: none !important;
+            }
+
+            i {
+                cursor: pointer;
+            }
+        }
+
+        #nav-container {
+           // background-color: $pastel-blue;
+           color: $blue;
+            display: none;
+            grid-area: navi;
+            padding: 0 20px 0;
+
+            @include lg {
+             //   background-color: $pastel-blue;
+                display: block !important;
+            }
+        }
+    }
+}

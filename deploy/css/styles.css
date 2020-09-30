@@ -383,16 +383,6 @@ ul li {
 /* =============
     Typography
 ============= */
-h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
 /* =============
     Buttons
 ============= */
@@ -417,9 +407,101 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+  text-align: right;
+}
+@media (min-width: 992px) {
+  #nav-container ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+#nav-container ul li {
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  #nav-container ul li {
+    align-items: center;
+    display: flex;
+    margin: 0px 30px 0 0;
+  }
+}
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  color: #2B575B;
+  text-decoration: none;
+  transition: 0.25s;
+}
+#nav-container ul li a:hover,
+#nav-container ul li a:active {
+  color: #5BB0B8;
+}
+
 /* =============
     Header
 ============= */
+header {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.125rem;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 600;
+}
+header > div {
+  display: grid;
+  grid-template-areas: "logo burger" "navi navi";
+  grid-template-columns: 80% auto;
+}
+@media (min-width: 992px) {
+  header > div {
+    grid-template-areas: "logo navi";
+    grid-template-columns: 20% auto;
+    height: auto;
+  }
+}
+header > div #logo-container {
+  grid-area: logo;
+  height: 45px;
+  padding: 20px;
+}
+@media (min-width: 992px) {
+  header > div #logo-container {
+    height: auto;
+  }
+}
+header > div #logo-container img {
+  height: 40px;
+}
+header > div #burger-container {
+  align-items: center;
+  display: flex;
+  grid-area: burger;
+  justify-content: flex-end;
+  padding: 20px;
+}
+@media (min-width: 992px) {
+  header > div #burger-container {
+    display: none !important;
+  }
+}
+header > div #burger-container i {
+  cursor: pointer;
+}
+header > div #nav-container {
+  color: #2B575B;
+  display: none;
+  grid-area: navi;
+  padding: 0 20px 0;
+}
+@media (min-width: 992px) {
+  header > div #nav-container {
+    display: block !important;
+  }
+}
+
 /* =============
     Footer
 ============= */
