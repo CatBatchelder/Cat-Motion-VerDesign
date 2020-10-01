@@ -1,3 +1,54 @@
 /* =============
     Footer
 ============= */
+
+footer{
+   // border-top: $red 4px solid;
+    //padding: 0 100px;
+    // display: grid;
+    // grid-template-columns: 50% auto;
+    // grid-template-areas: "logo icons";
+
+    div{
+        border-top: $red 4px solid;
+        padding: 0 50px;
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "logo icons";
+        
+        aside {
+            grid-area: logo;
+            display: flex;
+            justify-content: flex-start;
+            img{
+                height: 50px;
+                padding-top: 10px;
+            }
+        }
+    
+        ul{
+            grid-area: icons;
+            display: flex;
+                align-items: center;
+                justify-content: flex-end;
+               
+            li{
+                padding-right: 10px;
+                
+                a:link,
+            a:visited {
+                color: $blue;
+                text-decoration: none;
+                transition: 0.25s;
+            }
+
+            a:hover,
+            a:active {
+                color: $light-blue;
+            }
+            }
+        }
+    }
+
+    
+}

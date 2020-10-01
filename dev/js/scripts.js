@@ -1,7 +1,3 @@
-// import * as Demo from './demo.js';
-
-// console.log(Demo);
-
 
 var $burger = $("#burger-icon");
 var $nav = $('nav[data-nav]');

@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <!-- Font Awesome -->
- <script src="https://kit.fontawesome.com/0577b96c40.js" crossorigin="anonymous"></script>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0577b96c40.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Courier+Prime:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Fancy Box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
     <link rel="stylesheet" href="css/styles.css">
     <title>Ver Designs</title>
@@ -19,7 +23,7 @@
     <header>
         <div>
             <section id="logo-container">
-                <img src="img/logo.png" alt="ver designs logo">
+               <a href="#hero"> <img src="img/logo.png" alt="ver designs logo"></a>
             </section>
     
             <section id="burger-container">
@@ -28,10 +32,10 @@
     
             <nav id="nav-container" data-nav="main-navigation">
                 <ul>
-                    <li><a href="">what we offer</a></li>
-                    <li><a href="#">who we are</a></li>
-                    <li><a href="#">our team</a></li>
-                    <li><a href="#">project portfolio</a></li>
+                    <li><a href="#section-2">what we offer</a></li>
+                    <li><a href="#section-3">who we are</a></li>
+                    <li><a href="#section-4">our team</a></li>
+                    <li><a href="#section-5">project portfolio</a></li>
             </nav>
         </div>
     </header>
@@ -149,17 +153,43 @@
                                       <div>
                                           <h1>project portfolio</h1>
                                   
-                                          <ul>
-                                              <li><img src="img/g1.jpg" alt="house interior design"></li>
-                                              <li><img src="img/g2.jpg" alt="house interior design"></li>
-                                              <li><img src="img/g3.jpg" alt="house interior design"></li>
-                                              <li><img src="img/g4.jpg" alt="house interior design"></li>
+                                          <ul id="section-5-ul">
+                                              <li><a data-fancybox="portfolio" href="img/g1.2.jpg"><img src="img/g1.jpg" alt="house interior design"></a></li>
+                                              <li><a data-fancybox="portfolio" href="img/g2.2.jpg"><img src="img/g2.jpg" alt="house interior design"></a></li>
+                                              <li><a data-fancybox="portfolio" href="img/g3.2.jpg"><img src="img/g3.jpg" alt="house interior design"></a></li>
+                                              <li><a data-fancybox="portfolio" href="img/g4.2.jpg"><img src="img/g4.jpg" alt="house interior design"></a></li>
+                                              <li><a data-fancybox="portfolio" href="img/g5.jpg"><img src="img/g5.jpg" alt="house interior design" class="hide-img"></a></li>
+                                              <li><a data-fancybox="portfolio" href="img/g6.jpg"><img src="img/g6.jpg" alt="house interior design" class="hide-img"></a></li>
+                                              <li><a data-fancybox="portfolio" href="img/g7.jpg"><img src="img/g7.jpg" alt="house interior design" class="hide-img"></a></li>
+                                              <li><a data-fancybox="portfolio" href="img/g8.jpg"><img src="img/g8.jpg" alt="house interior design" class="hide-img"></a></li>
+                                              <li><a data-fancybox="portfolio" href="img/g9.jpg"><img src="img/g9.jpg" alt="house interior design" class="hide-img"></a></li>
+                                              <li><a data-fancybox="portfolio" href="img/g10.jpg"><img src="img/g10.jpg" alt="house interior design" class="hide-img"></a></li>
+                                              <li><a data-fancybox="portfolio" href="img/g11.jpg"><img src="img/g11.jpg" alt="house interior design" class="hide-img"></a></li>
                                           </ul>
                                       </div>
                                   
                                   </section>
-    
+    <footer class="content-spacing grid-container spacing-for-header">
+                                          <div>
+                                              <!-- <div></div> -->
+                                              <aside>
+                                                  <img src="img/logo.png" alt="ver designs logo">
+                                              </aside>
+                                      
+                                              <ul>
+                                                  <li><a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                                                  <li><a href="https://mail.google.com/mail/"><i class="far fa-envelope"></i></a></li>
+                                                  <li><a href="https://zoom.us/"><i class="fas fa-phone"></i></a></li>
+                                              </ul>
+                                      
+                                          </div>
+                                      </footer>
 
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <!-- Fancy Box -->
+         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    
     <script type="module" src="js/scripts-min.js"></script>
     
 </body>

@@ -402,6 +402,10 @@ ul li {
   grid-area: container;
 }
 
+.hide-img {
+  display: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -528,6 +532,42 @@ header > div #nav-container {
 /* =============
     Footer
 ============= */
+footer div {
+  border-top: #872C2C 4px solid;
+  padding: 0 50px;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "logo icons";
+}
+footer div aside {
+  grid-area: logo;
+  display: flex;
+  justify-content: flex-start;
+}
+footer div aside img {
+  height: 50px;
+  padding-top: 10px;
+}
+footer div ul {
+  grid-area: icons;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer div ul li {
+  padding-right: 10px;
+}
+footer div ul li a:link,
+footer div ul li a:visited {
+  color: #2B575B;
+  text-decoration: none;
+  transition: 0.25s;
+}
+footer div ul li a:hover,
+footer div ul li a:active {
+  color: #5BB0B8;
+}
+
 /* =============
    Hero
 ============= */
@@ -763,6 +803,7 @@ header > div #nav-container {
   font-family: "Comfortaa", cursive;
   text-align: center;
   font-size: 1.5rem;
+  color: #592666;
 }
 @media (min-width: 768px) {
   #section-4 div h1 {
@@ -771,6 +812,7 @@ header > div #nav-container {
 }
 #section-4 div ul {
   gap: 20px;
+  margin-top: 50px;
 }
 #section-4 div ul .first-li {
   gap: 20px;
@@ -841,36 +883,47 @@ header > div #nav-container {
   font-family: "Comfortaa", cursive;
   text-align: center;
   font-size: 1.5rem;
+  color: #592666;
 }
 @media (min-width: 768px) {
   #section-5 h1 {
     font-size: 1.875rem;
   }
 }
-#section-5 ul {
+#section-5 #section-5-ul {
   display: grid;
   gap: 20px;
+  margin-top: 50px;
 }
 @media (min-width: 768px) {
-  #section-5 ul {
-    grid-template-columns: 25% 40% 35%;
-    grid-template-areas: "g1 g2 g4"/"g1 g3 g4";
+  #section-5 #section-5-ul {
+    grid-template-columns: 24% 38% 37%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "g1 g2 g4" "g1 g3 g4";
   }
 }
-#section-5 ul li img {
+#section-5 #section-5-ul li img {
   object-fit: cover;
   width: 100%;
   height: auto;
 }
-#section-5 ul li li:nth-child(1) {
-  grid-area: g1;
+@media (min-width: 768px) {
+  #section-5 #section-5-ul li:nth-child(1) {
+    grid-area: g1;
+  }
 }
-#section-5 ul li li:nth-child(2) {
-  grid-area: g2;
+@media (min-width: 768px) {
+  #section-5 #section-5-ul li:nth-child(2) {
+    grid-area: g2;
+  }
 }
-#section-5 ul li li:nth-child(3) {
-  grid-area: g3;
+@media (min-width: 768px) {
+  #section-5 #section-5-ul li:nth-child(3) {
+    grid-area: g3;
+  }
 }
-#section-5 ul li li:nth-child(4) {
-  grid-area: g4;
+@media (min-width: 768px) {
+  #section-5 #section-5-ul li:nth-child(4) {
+    grid-area: g4;
+  }
 }

@@ -8,6 +8,7 @@
             font-family: 'Comfortaa', cursive;
             text-align: center;
             font-size: rem-calc(24);
+            color: $purple;
 
             @include md {
                 font-size: rem-calc(30);
@@ -16,6 +17,7 @@
 
         ul {
             gap: 20px;
+            margin-top: 50px;
             .first-li {
                 gap: 20px;
                 margin-bottom: 50px;
