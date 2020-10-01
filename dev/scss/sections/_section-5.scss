@@ -2,62 +2,68 @@
     section 5
 ============= */
 
-#section-5{
-    h1 {
-        font-family: 'Comfortaa', cursive;
-        text-align: center;
-        font-size: rem-calc(24);
-        color: $purple;
+#section-5 {
+    div {
 
-        @include md {
-            font-size: rem-calc(30);
-        }
-    }
+        h1 {
+            font-family: 'Comfortaa', cursive;
+            text-align: center;
+            font-size: rem-calc(24);
+            color: $purple;
 
-    #section-5-ul{
-        display: grid;
-        gap: 20px;
-        margin-top: 50px;
-
-        @include md{
-            grid-template-columns: 24% 38% 37%;
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-areas: 
-            "g1 g2 g4"
-            "g1 g3 g4";
-        }
-        li{
-            //gap: 20px;
-            img{
-                object-fit: cover;
-                width: 100%;
-                height: auto;
-            }
-
-            
-        }
-        li:nth-child(1) {
-            @include md{
-                grid-area: g1;
-            }
-
-        }
-
-        li:nth-child(2) {
-            @include md{
-                grid-area: g2;
+            @include md {
+                font-size: rem-calc(30);
             }
         }
 
-        li:nth-child(3) {
-            @include md{
-                grid-area: g3;
-            }
-        }
+        #section-5-ul {
+            display: grid;
+            gap: 20px;
+            margin-top: 50px;
 
-        li:nth-child(4) {
-            @include md{
-                grid-area: g4;
+            @include md {
+                grid-template-columns: 24% 38% 37%;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-areas:
+                    "g1 g2 g4"
+                    "g1 g3 g4";
+            }
+
+            li {
+
+                //gap: 20px;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: auto;
+                }
+
+
+            }
+
+            li:nth-child(1) {
+                @include md {
+                    grid-area: g1;
+                }
+
+            }
+
+            li:nth-child(2) {
+                @include md {
+                    grid-area: g2;
+                }
+            }
+
+            li:nth-child(3) {
+                @include md {
+                    grid-area: g3;
+                }
+            }
+
+            li:nth-child(4) {
+                @include md {
+                    grid-area: g4;
+                }
             }
         }
     }

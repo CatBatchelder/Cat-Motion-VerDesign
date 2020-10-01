@@ -17,7 +17,11 @@
 
         ul {
             gap: 20px;
-            margin-top: 50px;
+           // margin-top: 50px;
+
+           @include lg{
+               margin-top: 50px;
+           }
             .first-li {
                 gap: 20px;
                 margin-bottom: 50px;
@@ -51,6 +55,7 @@
                             font-family: 'Comfortaa', cursive;
                             color: $pink;
                             font-size: rem-calc(20);
+                            margin-bottom: -15px;
 
                             @include md{
                                 font-size: rem-calc(25);
@@ -60,12 +65,15 @@
                         h3 {
                             font-family: 'Comfortaa', cursive;
                             font-weight: 300;
-                            margin-bottom: 50px;
+                            margin-bottom: 30px;
                             color: $pink;
                             font-size: rem-calc(20);
 
                             @include md{
                                 font-size: rem-calc(25);
+                            }
+                            @include md{
+                                margin-bottom: 50px;
                             }
                         }
 
