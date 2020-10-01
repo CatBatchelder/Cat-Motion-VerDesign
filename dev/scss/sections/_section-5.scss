@@ -1,0 +1,53 @@
+/* =============
+    section 5
+============= */
+
+#section-5{
+    h1 {
+        font-family: 'Comfortaa', cursive;
+        text-align: center;
+        font-size: rem-calc(24);
+
+        @include md {
+            font-size: rem-calc(30);
+        }
+    }
+
+    ul{
+        display: grid;
+        gap: 20px;
+
+        @include md{
+            grid-template-columns: 25% 40% 35%;
+          //  grid-template-rows: repeat(2 1fr);
+             grid-template-areas: 
+             "g1 g2 g4"
+            /"g1 g3 g4";
+        }
+        li{
+            //gap: 20px;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: auto;
+            }
+
+            li:nth-child(1) {
+                grid-area: g1;
+
+            }
+
+            li:nth-child(2) {
+                grid-area: g2;
+            }
+
+            li:nth-child(3) {
+                grid-area: g3;
+            }
+
+            li:nth-child(4) {
+                grid-area: g4;
+            }
+        }
+    }
+}

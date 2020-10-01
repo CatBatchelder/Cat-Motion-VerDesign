@@ -1,0 +1,88 @@
+/* =============
+    section 4
+============= */
+
+#section-4 {
+    div {
+        h1 {
+            font-family: 'Comfortaa', cursive;
+            text-align: center;
+            font-size: rem-calc(24);
+
+            @include md {
+                font-size: rem-calc(30);
+            }
+        }
+
+        ul {
+            gap: 20px;
+            .first-li {
+                gap: 20px;
+                margin-bottom: 50px;
+                @include md{
+                    display: grid;
+                    grid-template-columns: 40% 60%;
+                    grid-template-areas: "img text";
+                }
+                img {
+                    @include md{
+                        grid-area: img;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                    }
+                    object-fit: cover;
+                    width: 100%;
+                    height: auto;
+                }
+
+                ul {
+                    @include md{
+                        grid-area: text;
+                        // display: flex;
+                        // align-items: center;
+                        // justify-content: center;
+                    }
+                    li {
+                        h2 {
+                            font-family: 'Comfortaa', cursive;
+                            color: $pink;
+                            font-size: rem-calc(20);
+
+                            @include md{
+                                font-size: rem-calc(25);
+                            }
+                        }
+
+                        h3 {
+                            font-family: 'Comfortaa', cursive;
+                            font-weight: 300;
+                            margin-bottom: 50px;
+                            color: $pink;
+                            font-size: rem-calc(20);
+
+                            @include md{
+                                font-size: rem-calc(25);
+                            }
+                        }
+
+                        p {
+                            font-family: 'Courier Prime', monospace;
+                            color: $pink;
+                            font-size: rem-calc(16);
+
+                            @include md{
+                                font-size: rem-calc(18);
+                            }
+                        }
+                    }
+                }
+
+
+
+
+            }
+        }
+    }
+}

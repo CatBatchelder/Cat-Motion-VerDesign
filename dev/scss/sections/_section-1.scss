@@ -6,7 +6,7 @@
    div {
       @include md{
          display: grid;
-         grid-template-columns: 55% 20% auto;
+         grid-template-columns: 55% 20% auto; 
          grid-template-areas: "hero hero text";
       }
       aside {
