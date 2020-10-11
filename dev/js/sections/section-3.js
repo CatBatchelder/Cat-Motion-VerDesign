@@ -7,8 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const section3TL = gsap.timeline();
-section3TL.from("#section-3-hero div",{duration: 2, rotate: 90, scale: 4, alpha:0})
-            .from("#section-3-examples span",{duration: 2, x:-300});
+section3TL.from("#section-3-hero div",{duration: 1, rotate: 90, scale: 4, alpha:0})
+            .from("#section-3-examples span",{duration: 3, x:-300});
 
 
 
